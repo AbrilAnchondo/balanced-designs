@@ -1,0 +1,168 @@
+/* text color */
+.text-primary {
+  color: rgb(211, 153, 168);
+  /* color: rgb(177, 141, 150); */
+}
+
+.text-secondary {
+  color: rgb(122, 155, 155);
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(177, 141, 150);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary,
+.bg-primary {
+  background: rgb(177, 141, 150);
+  color: white;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background: rgb(122, 155, 155);
+  color: white;
+}
+
+.btn-light,
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn-dark,
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  /* adjustment */
+  /* height: 25vh;  this doesnt work with Artisans, images cover the header*/
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex Columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  /* adjustment */
+  height: 400px;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+  padding-top: 20px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+/* section header */
+section#team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section-padding {
+  padding: 20px 20px 30px;
+}
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  /* padding: 0 4px; */
+}
+
+/* adjustment */
+.flex-grid .column img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
